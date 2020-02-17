@@ -29,19 +29,16 @@ mvn spring-boot:run
 ```
 The app will starting running at:
 ```
-http://localhost:8080
-```
+<http://localhost:8080>
 ```
 The app explores the following CRUD REST APIs.
+```
 GET /employees-demo/api/v1/employees
 POST /employees-demo/api/v1/employees
 GET /employees-demo/api/v1/employees/{employeeId}
-
 PUT /employees-demo/api/v1/employees/{employeeId}
-
 DELETE /employees-demo/api/v1/employees/{employeeId}
 ```
-
 ### Frontend
 Once the Spring Boot application is ready, the front-end application is run using the commands below.
 ```sh
