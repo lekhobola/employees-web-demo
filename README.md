@@ -45,6 +45,8 @@ npm install
 npm install @angular/material @angular/cdk
 npm install hammerjs
 npm install @angular/flex-layout rxjs-compat
-ng serve --open
 ```
 This will start Angular's live development server and also open the browser at http://localhost:4200.
+```
+ng serve --open
+```
