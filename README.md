@@ -27,9 +27,3 @@ mvn spring-boot:run
 cd employees-web-demo/webapp
 ng serve --open
 ```
-
-=======
-# employees-web-demo
-# employees-web-demo
->>>>>>> first commit
-# employees-web-demo
