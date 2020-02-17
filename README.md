@@ -1,8 +1,6 @@
 # Employees Web Demo
 > The employees web demo application using Angular 8+ Frontent with SpringBoot (Java) Backend.
 
-[![NPM Version][npm-image]][npm-url]
-[![Downloads Stats][npm-downloads]][npm-url]
 
 This is the demo for employees web application that uses the Spring Boot to implement a RESTful backend, and Angular to create a JavaScript-based frontend.  
 
@@ -19,12 +17,12 @@ This is the demo for employees web application that uses the Spring Boot to impl
 
 ## Installation Setup
 
-# Backend
+### Backend
 ```sh
 cd employees-web-demo
 mvn spring-boot:run
 ```
-# Frontend
+### Frontend
 ```sh
 cd employees-web-demo/webapp
 make install
