@@ -18,12 +18,32 @@ This is the demo for employees web application that uses the Spring Boot to impl
 ## Installation Setup
 
 ### Backend
-Configure MySQL properties, i.e. username and password in file employees-web-demo/src/main/application.properties
+Configure MySQL properties, i.e. username and password in file below
+```
+employees-web-demo/src/main/application.properties
+```
+Then execute the following commands to run Spring Boot application.
 ```sh
 cd employees-web-demo
 mvn spring-boot:run
 ```
+The app will starting running at:
+```
+http://localhost:8080
+```
+```
+The app explores the following CRUD REST APIs.
+GET /employees-demo/api/v1/employees
+POST /employees-demo/api/v1/employees
+GET /employees-demo/api/v1/employees/{employeeId}
+
+PUT /employees-demo/api/v1/employees/{employeeId}
+
+DELETE /employees-demo/api/v1/employees/{employeeId}
+```
+
 ### Frontend
+Once the Spring Boot application is ready, the front-end application is run using the commands below.
 ```sh
 cd employees-web-demo/webapp
 npm install
