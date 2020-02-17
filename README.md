@@ -1,4 +1,3 @@
-<<<<<<< 91f9ce7392c33404b62508b78a02ebabaca2c91b
 # Employees Web Demo
 > The employees web demo application using Angular 8+ Frontent with SpringBoot (Java) Backend.
 
