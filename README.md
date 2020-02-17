@@ -18,6 +18,7 @@ This is the demo for employees web application that uses the Spring Boot to impl
 ## Installation Setup
 
 ### Backend
+Configure MySQL properties, i.e. username and password in file employees-web-demo/src/main/application.properties
 ```sh
 cd employees-web-demo
 mvn spring-boot:run
