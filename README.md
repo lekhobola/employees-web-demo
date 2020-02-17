@@ -25,7 +25,6 @@ mvn spring-boot:run
 ### Frontend
 ```sh
 cd employees-web-demo/webapp
-make install
 ng serve --open
 ```
 
