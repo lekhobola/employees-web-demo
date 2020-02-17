@@ -27,11 +27,9 @@ Then execute the following commands to run Spring Boot application.
 cd employees-web-demo
 mvn spring-boot:run
 ```
-The app will starting running at:
+The app will starting running at <http://localhost:8080>:
 ```
-<http://localhost:8080>
-```
-The app explores the following CRUD REST APIs.
+The app explores the following REST CRUD APIs.
 ```
 GET /employees-demo/api/v1/employees
 POST /employees-demo/api/v1/employees
