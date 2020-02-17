@@ -1,0 +1,14 @@
+.employee-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.employee-form > * {
+    width: 25%;
+}
+
+.close{
+    width: 25%;
+}

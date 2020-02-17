@@ -1,0 +1,81 @@
+<div>
+    <div class="container">
+      <div fxLayout="row" fxLayoutAlign="center center" class="content">
+          <div class="container">
+            <div class="container">
+                <div fxLayout="column" fxLayoutGap="20px" fxLayout.gt-md="row" fxLayoutAlign="start" class="content">        
+                  <div class="blocks">
+                      <h2>Employees</h2>
+                      <button button="submit" mat-raised-button color="primary" (click)="addEmployee()">
+                        <mat-icon>add</mat-icon>
+                        Add
+                      </button>                      
+                  </div>
+                </div>
+            </div>
+            <mat-card class="card">
+                <mat-card-content>
+                  <div class="employee-container mat-elevation-z8">
+                      <mat-table #table [dataSource]="dataSource">
+                      <ng-container matColumnDef="id">
+                        <mat-header-cell *matHeaderCellDef> Id </mat-header-cell>
+                        <mat-cell *matCellDef="let employee"> {{employee.id}} </mat-cell>
+                      </ng-container>  
+                      <ng-container matColumnDef="names">
+                        <mat-header-cell *matHeaderCellDef> Names </mat-header-cell>
+                        <mat-cell *matCellDef="let employee"> {{employee.names}} </mat-cell>
+                      </ng-container>
+                      <ng-container matColumnDef="lastName">
+                        <mat-header-cell *matHeaderCellDef> Last Name </mat-header-cell>
+                        <mat-cell *matCellDef="let employee"> {{employee.lastName}} </mat-cell>
+                      </ng-container>
+                      <ng-container matColumnDef="identityNumber">
+                        <mat-header-cell *matHeaderCellDef> Identity Number </mat-header-cell>
+                        <mat-cell *matCellDef="let employee"> {{employee.identityNumber}} </mat-cell>
+                      </ng-container>
+                      <ng-container matColumnDef="dateOfBirth">
+                        <mat-header-cell *matHeaderCellDef> Birth Date </mat-header-cell>
+                        <mat-cell *matCellDef="let employee"> {{employee.dateOfBirth | date: 'd/M/y'}} </mat-cell>
+                      </ng-container>
+                      <ng-container matColumnDef="addressPhysical">
+                        <mat-header-cell *matHeaderCellDef> Physical Address </mat-header-cell>
+                        <mat-cell *matCellDef="let employee"> {{employee.addressPhysical}} </mat-cell>
+                      </ng-container>
+                      <ng-container matColumnDef="addressPostal">
+                        <mat-header-cell *matHeaderCellDef> Postal Address </mat-header-cell>
+                        <mat-cell *matCellDef="let employee"> {{employee.addressPostal}} </mat-cell>
+                      </ng-container>
+                      <ng-container matColumnDef="telephoneNumber">
+                        <mat-header-cell *matHeaderCellDef> Telephone Number </mat-header-cell>
+                        <mat-cell *matCellDef="let employee"> {{employee.telephoneNumber}} </mat-cell>
+                      </ng-container>
+                      <ng-container matColumnDef="employeeNumber">
+                        <mat-header-cell *matHeaderCellDef> Employee Number </mat-header-cell>
+                        <mat-cell *matCellDef="let employee"> {{employee.employeeNumber}} </mat-cell>
+                      </ng-container>
+                      <ng-container matColumnDef="action">
+                        <mat-header-cell *matHeaderCellDef>Action</mat-header-cell>
+                        <mat-cell *matCellDef="let employee">
+                            <a type="button" (click)="editEmployee(employee)">
+                              <mat-icon class="icon">edit</mat-icon>
+                            </a>
+                            <a type="button" (click)="deleteEmployee(employee)">
+                                <mat-icon class="icon" >delete</mat-icon>
+                              </a>
+                        </mat-cell>
+                      </ng-container>
+                     
+                      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                      </mat-table>
+                      <mat-paginator [length]="12" [pageSize]="3"
+                                     [pageSizeOptions]="[3, 5, 10]"></mat-paginator>
+                  </div>
+                </mat-card-content>
+            </mat-card>
+          </div>
+      </div>
+    </div>
+</div>
+    
+    

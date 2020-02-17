@@ -1,0 +1,48 @@
+<div class="container">
+  
+    <form class="employee-form" (ngSubmit)="onSubmit()" [formGroup]="editForm">
+        <h4>Edit User</h4>
+        
+        <mat-form-field>
+          <input matInput placeholder="Id" type="text" formControlName="id" name="id" ng-model="employee.id" readonly=true>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Names" type="text" required formControlName="names" name="names">
+        </mat-form-field>
+    
+        <mat-form-field>
+          <input matInput placeholder="Last Name" type="text" required formControlName="lastName" name="lastName">
+        </mat-form-field>
+    
+        <mat-form-field>
+          <input matInput placeholder="Identity Number" type="text" required formControlName="identityNumber" name="identityNumber">
+        </mat-form-field>
+  
+        <mat-form-field>
+          <input matInput placeholder="Birth Date" type="date" required formControlName="dateOfBirth" name="dateOfBirth">
+        </mat-form-field>
+  
+        <mat-form-field>
+          <textarea matInput placeholder="Physical Address" required formControlName="addressPhysical" name="addressPhysical"></textarea>
+        </mat-form-field>
+  
+        <mat-form-field>
+          <textarea matInput placeholder="Postal Address" required formControlName="addressPostal" name="addressPostal"></textarea>
+        </mat-form-field>
+  
+        <mat-form-field>
+          <input matInput placeholder="Telephone Number" type="text" required formControlName="telephoneNumber" name="telephoneNumber">
+        </mat-form-field>
+  
+        <mat-form-field>
+          <input matInput placeholder="Employee Number" type="text" required formControlName="employeeNumber" name="employeeNumber">
+        </mat-form-field>
+
+        <!-- <mat-form-field [hidden]="true">
+          <input matInput placeholder="Company" type="text" required formControlName="company" name="company">
+        </mat-form-field> -->
+
+        <button mat-raised-button type="submit" color="primary">Update</button>
+      </form>
+  </div>

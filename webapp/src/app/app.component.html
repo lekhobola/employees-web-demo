@@ -1,0 +1,42 @@
+<mat-sidenav-container>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+     <div fxHide.gt-xs>
+       <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+     <div>
+       <a>
+          Technical Demo
+       </a>
+     </div>
+     <div fxFlex fxLayout fxLayoutAlign="flex-end"  fxHide.xs>
+        <ul fxLayout fxLayoutGap="20px" class="navigation-items">
+            <li>
+                <a>
+                  <mat-icon class="icon">business</mat-icon>
+                  <span  class="label">Companies</span>
+                 </a>
+            </li>
+            <li>
+                <a routerLink="/list-employee">
+                  <mat-icon class="icon">people</mat-icon>
+                  <span  class="label">Employees</span>
+                 </a>
+            </li>
+            <li>
+              <a routerLink="/">
+                  <mat-icon class="icon">home</mat-icon>
+                  <span class="label">Home</span>
+              </a>
+            </li>            
+        </ul>
+     </div>
+    </mat-toolbar>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
