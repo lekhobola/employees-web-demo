@@ -18,10 +18,10 @@ This is the demo for employees web application that uses the Spring Boot to impl
 ## Installation Setup
 
 ### Backend
-``sh
+```sh
 cd employees-web-demo
 mvn spring-boot:run
-``
+```
 ### Frontend
 ```sh
 cd employees-web-demo/webapp
