@@ -25,5 +25,9 @@ mvn spring-boot:run
 ### Frontend
 ```sh
 cd employees-web-demo/webapp
+npm install
+npm install @angular/material @angular/cdk
+npm install hammerjs
+npm install @angular/flex-layout rxjs-compat
 ng serve --open
 ```
