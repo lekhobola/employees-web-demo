@@ -21,7 +21,7 @@ import java.util.Map;
 /**
  * The type Company controller.
  *
- * @author Givantha Kalansuriya
+ * @author Lekhobola Tsoeunyane
  */
 @RestController
 @RequestMapping("employees-demo/api/v1")
