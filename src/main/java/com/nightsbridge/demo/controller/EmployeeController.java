@@ -21,7 +21,7 @@ import java.util.Map;
 /**
  * The type Employee controller.
  *
- * @author Givantha Kalansuriya
+ * @author Lekhobola Tsoeunyane
  */
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
